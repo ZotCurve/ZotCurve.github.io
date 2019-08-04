@@ -1,1 +1,0 @@
-# ZotCurve.github.io
