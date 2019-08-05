@@ -1,5 +1,5 @@
-/*  ZotCurve - A tool for UCI students to seek the grade distributions of classes prior.
-    Copyright (C) 2019  Gevorg Keshishian
+/*  ZotCurve - A tool for UCI students to look at the grade distributions of classes prior.
+    Copyright (C) 2019  ZotCurve
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -32,36 +32,30 @@ html
 
 body {
 	height: 100%;
-/*	display: none;
-*/    overflow: scroll;
+	display: none;
+	overflow: hidden;
 }
 
 #left
 {
-/*	float: left;
-	width: 60%;
 	height: 100%;
-	background-color: #FAFAFA;*/
-	/*	width: 100%;
-*/	overflow: scroll;
+	width: 100%;
+	overflow: hidden;
 }
 
 #right
 {
 	background-color: #cbe8f7;
-/*	width: 100%;
-	width: 40%;
+	width: 50%;
 	height: 100%;
-	float: left;*/
-	overflow: scroll;
-
+	float: left;
+	overflow-y: auto;
 }
 
 #dataInput
 {
-/*	width: 100%;
-	height: 100%;*/
-	padding-left: 3%;
+	height: 100%;
+	overflow-y: scroll;
 }
 
 #scheduleOfClasses
@@ -69,6 +63,7 @@ body {
 	width: 100%;
 	height: 100%;
 	display: none;
+	overflow: scroll;
 }
 
 button 
@@ -117,8 +112,7 @@ button:active
 	padding-left: 10%;
 	width: 95%;
 	z-index: 0;
-/*	background-color: black;
-*/	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-left-radius:5px;
 	border-top-left-radius:5px;
 	-webkit-border-top-right-radius:5px;
 	border-top-right-radius:5px;
@@ -137,8 +131,7 @@ button:active
 	padding-left: 2%;
 	padding-top: .2%;
 	padding-right: 0%;
-/*	margin-top: -0.4%;
-*/	vertical-align: middle;
+	vertical-align: middle;
 	line-height: 200%;
 	background-color: #F8F8F8;
 	font-size: 18px;
@@ -156,8 +149,7 @@ button:active
 .dataEntry
 {
 	text-align: center;
-/*	display: inline-block;
-*/	background-color: #F8F8F8;
+	background-color: #F8F8F8;
 	padding-bottom: .2%;
 	width: 66.75%;
 	height: 100%;
@@ -176,17 +168,18 @@ button:active
 
 .header
 {
-/*	font-weight: bold;
-*/	text-align: center;
+	text-align: center;
 	font-size: 60px;
+	margin-left: 18%;
+	width: 75%;
+	display: block;
 }
 
 #links
 {
 	display: block;
-	margin: 0 auto;
+	margin: -4% auto 4% auto;
 	text-align: center;
-	
 }
 
 .link
@@ -205,22 +198,22 @@ button:active
 #footer
 {
 	display: block;
-	margin: 0 auto;
+	margin: -30% auto;
 	text-align: center;
 	font-size: 12px;
 }
 
 #return
 {
-	width: 99%;
+	width: 100%;
 }
 
 #chart
 {
 	vertical-align: middle;
 	width: 98%;
-	margin: 3% auto;
-	height: 78%;
+	margin: 3% auto 14% auto;
+	height: 87%;
 }
 
 .chartTitle
@@ -254,21 +247,31 @@ button:active
 	display: none;
 }
 
-table#classList tr:nth-child(even) 
+
+table th 
+{
+  color: white;
+  background-color: grey;
+  text-align: center;
+}
+
+table td
+{
+	height: 40px;
+	vertical-align: middle;
+}
+
+table tr:nth-child(even) 
 {
   background-color: #ddd;
 }
 
-table#classList tr:nth-child(odd) 
+table tr:nth-child(odd) 
 {
   background-color: #fff;
 }
 
-table#classList th 
-{
-  color: white;
-  background-color: grey;
-}
+
 
 .classEntry 
 {
