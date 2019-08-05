@@ -137,8 +137,8 @@ button:active
 	padding-right: 0%;*/
 	vertical-align: middle;
 /*	line-height: 200%;
-*//*	background-color: #F8F8F8;
-*/	font-size: 16px;
+    background-color: #F8F8F8; */
+	font-size: 16px;
 	-webkit-border-top-left-radius:3px;
 	border-top-left-radius:3px;
 	-webkit-border-bottom-left-radius:3px;
