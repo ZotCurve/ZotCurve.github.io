@@ -62,7 +62,9 @@
 						<button class="btn btn-primary" type="button" id="submit" onclick="buildClassList()">Submit</button>
 						<button class="btn btn-warning" type="button" id="reset" onclick="resetSearch()">Reset</button>
 						<div class="form-group row pair">
-							<label class="col-sm-4 col-form-label inputLabel">Year</label>
+							<div class="col-sm-4 ">
+								<label class="col-form-label inputLabel">Year</label>
+							</div>
 							<div class="col-sm-8">
 								<select class="dataEntry dropDown" id="yearSelect">
 									<option value="2018to19">2018-19</option>
@@ -80,7 +82,9 @@
 						</div>
 
 						<div class="form-group row pair">
-							<label class="col-sm-4 inputLabel">Term</label>
+							<div class="col-sm-4 ">
+								<label class="col-form-label inputLabel">Term</label>
+							</div>
 							<div class="col-sm-8">
 								<select class="dataEntry dropDown" id="termSelect">
 									<option value="All">All</option>
@@ -93,7 +97,9 @@
 						</div>
 
 						<div class="form-group row pair">
-							<label class="col-sm-4 inputLabel required">Department</label>
+							<div class="col-sm-4 ">							
+								<label class="col-form-label inputLabel required">Department</label>
+							</div>
 							<div class="col-sm-8">
 							<select class="dataEntry dropDown" id="departmentSelect">
 								<option value="All">All Departments</option>
@@ -238,25 +244,33 @@
 							</div>				
 						</div>
 						<div class="form-group row pair">
-							<label class="col-sm-4 col-form-label inputLabel">Course Number</label>
-							<div class="col-sm-8">
+							<div class="col-sm-4 ">
+								<label class="col-form-label inputLabel pad-0">Course Number</label>
+							</div>
+							<div class="col-sm-8 pad-0">
 								<input type="text" class="form-control dataEntry textInput" id="courseNumberInput" placeholder="e.g. 5, 10-20; (exclude letters)">	
 							</div>				
 						</div>
 						<div class="form-group row pair">
-							<label class="col-sm-4 col-form-label inputLabel required">Course code</label>
+							<div class="col-sm-4 ">							
+								<label class="col-form-label inputLabel required">Course code</label>
+							</div>
 							<div class="col-sm-8">
 								<input type="text" class="form-control dataEntry textInput" id="courseCodeInput" placeholder="e.g. 14200, 29000-29100">
 							</div>
 						</div>
 						<div class="form-group row pair">
-							<label class="col-sm-4 col-form-label inputLabel required">Instructor</label>
+							<div class="col-sm-4 ">							
+								<label class="col-form-label inputLabel required">Instructor</label>
+							</div>
 							<div class="col-sm-8">
 								<input type="text" class="form-control dataEntry textInput" id="instructorInput">
 							</div>
 						</div>
 						<div class="form-group row pair">
-							<label class="col-sm-4 col-form-label inputLabel required">Course Title</label>
+							<div class="col-sm-4 ">							
+								<label class="col-form-label inputLabel required">Course Title</label>
+							</div>	
 							<div class="col-sm-8">
 								<input type="text" class="form-control dataEntry textInput" id="courseTitleInput">
 							</div>
@@ -264,10 +278,13 @@
 						<label class="error" id="invalidSearch">Invalid search parameters</label>
 						<button class="btn btn-primary" type="button" id="submit" onclick="buildClassList()">Submit</button>
 						<button class="btn btn-warning" type="button" id="reset" onclick="resetSearch()">Reset</button>
+						<br>
+						<br>
 					</div>
 					<div id="scheduleOfClasses">
 						<br>
 						<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>	
+						<br>
 						<br>
 						<table id="classList" style="width:100%">
 							<tr id="tableHeading">
@@ -281,7 +298,7 @@
 						</table>
 						<br>
 						<label class="error" id="noResults">No results found for given search parameters</label>
-					<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>
+						<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>
 					</div>
 				</div>
 			</div>
