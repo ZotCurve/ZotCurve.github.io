@@ -33,14 +33,14 @@ html
 body {
 	height: 100%;
 	display: none;
-	overflow: scroll;
+	overflow: hidden;
 }
 
 #left
 {
 	height: 100%;
 /*	width: 100%;
-*/	overflow: scroll;
+*/	overflow: hidden;
 }
 
 #right
