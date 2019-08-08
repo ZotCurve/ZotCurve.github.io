@@ -22,7 +22,6 @@
         <meta charset="UTF-8">
 		<meta name="description" content= "ZotCurve - A tool for UCI students to seek the grade distributions of classes prior. Created by Gevorg Keshishian">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="google-site-verification" content="A_75WsPdG4DtTiDqzHOBxgh6MurwA2pPFycAkKhg6R8" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
         <link rel="stylesheet" href="zotcurve.css" type="text/css" >
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -42,23 +41,23 @@
 					</div>
 					<div id="chart">
 						<div class="chartTitle" id="class">Filler</div>
-						<div class="chartTitle" id="subtext">Filler</div>
+						<div class="chartTitle subtitle" id="subtext">Filler</div>
 						</br>
 						<canvas id="canvas"></canvas>
-						<div class="chartTitle" id="average"></div>
-					</div>
-					<div id="footer">
-						<p>
-							Version: 1.3.0 beta
-							</br>
-							<a href="https://github.com/ZotCurve/ZotCurve.github.io/issues" class=link>Report an Issue</a>
-						</p>
+						<div class="chartTitle subtitle" id="average">Filler</div>
+						<div id="footer">
+							<p>
+								Version: 1.3.0 beta
+								</br>
+								<a href="https://github.com/ZotCurve/ZotCurve.github.io/issues" class=link>Report an Issue</a>
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 pad-0" id ="right" style="min-height: 100vh; height: 100%;">
-					<div class = "box">
-					   <div id = "message"></div>
-					   <button id = "OK">OK</button>
+					<div class="box">
+					   <div id="message"></div>
+					   <button id="OK">OK</button>
 					</div>
 					<div id="dataInput">
 						<br>
@@ -290,6 +289,10 @@
 						<br>
 						<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>	
 						<br>
+						<!--<br>
+							<input type="radio" class="plotType" id="single" name="add" value="single" checked="checked"> Single Class
+							<input type="radio" class="plotType" id="multiple" name="add" value="multiple"> Multiple Classes
+						<br>-->
 						<br>
 						<table id="classList" style="width:100%">
 							<tr id="tableHeading">

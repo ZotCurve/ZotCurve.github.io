@@ -200,7 +200,7 @@ button:active
 #footer
 {
 	display: block;
-	margin: -30% auto;
+	margin: 10% auto;
 	text-align: center;
 	font-size: 12px;
 }
@@ -210,12 +210,13 @@ button:active
 	width: 100%;
 }
 
+
 #chart
 {
 	vertical-align: middle;
 	width: 98%;
 	margin: 3% auto 14% auto;
-	height: 87%;
+	min-height: 87%;
 }
 
 .chartTitle
