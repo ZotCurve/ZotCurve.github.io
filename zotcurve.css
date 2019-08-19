@@ -64,7 +64,7 @@ body {
 	overflow: scroll;
 }
 
-button 
+button
 {
 	background-color:#b3d3fc;
 	-webkit-border-top-left-radius:5px;
@@ -90,12 +90,12 @@ button
 	text-align:center;
 }
 
-button:hover 
+button:hover
 {
 	background-color:#89b1d6;
 }
 
-button:active 
+button:active
 {
 	position:relative;
 	top:1px;
@@ -124,7 +124,7 @@ button:active
 	border-bottom-left-radius:5px;
 }
 
-.inputLabel 
+.inputLabel
 {
 /*	display: inline-block;
 */	width: 30%;
@@ -250,8 +250,12 @@ button:active
 	display: none;
 }
 
+#working
+{
+    display: none;
+}
 
-table th 
+table th
 {
   color: white;
   background-color: grey;
@@ -264,19 +268,19 @@ table td
 	vertical-align: middle;
 }
 
-table tr:nth-child(even) 
+table tr:nth-child(even)
 {
   background-color: #ddd;
 }
 
-table tr:nth-child(odd) 
+table tr:nth-child(odd)
 {
   background-color: #fff;
 }
 
 
 
-.classEntry 
+.classEntry
 {
 
 }

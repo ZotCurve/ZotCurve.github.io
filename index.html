@@ -35,7 +35,7 @@
 					<div id="links">
 						<h5>
 							<a class="link" href="https://github.com/ZotCurve/ZotCurve.github.io">GitHub</a>
-							| 
+							|
 							<a class="link" href="https://github.com/ZotCurve/ZotCurve.github.io/wiki/FAQ">FAQ</a>
 						</h5>
 					</div>
@@ -47,7 +47,7 @@
 						<div class="chartTitle subtitle" id="average">Filler</div>
 						<div id="footer">
 							<p>
-								Version: 1.4.0 beta
+								Version: 1.5.0 beta
 								</br>
 								<a href="https://github.com/ZotCurve/ZotCurve.github.io/issues" class=link>Report an Issue</a>
 							</p>
@@ -76,10 +76,6 @@
 									<option value="2016to17">2016-17</option>
 									<option value="2015to16">2015-16</option>
 									<option value="2014to15">2014-15</option>
-									<option value="2013to14">2013-14</option>
-									<option value="2012to13">2012-13</option>
-									<option value="2011to12">2011-12</option>
-									<option value="2010to11">2010-11</option>
 									<option value="All">All Available Years</option>
 								</select>
 							</div>
@@ -101,7 +97,7 @@
 						</div>
 
 						<div class="form-group row pair">
-							<div class="col-sm-4">							
+							<div class="col-sm-4">
 								<label class="col-form-label inputLabel required">Department</label>
 							</div>
 							<div class="col-sm-8">
@@ -245,15 +241,15 @@
 								<option value="WOMN ST">WOMN ST . . . . Women's Studies</option>
 								<option value="WRITING">WRITING . . . . . Writing</option>
 							</select>
-							</div>				
+							</div>
 						</div>
 						<div class="form-group row pair">
 							<div class="col-sm-4">
 								<label class="col-form-label inputLabel pad-0">Course Number</label>
 							</div>
 							<div class="col-sm-8 pad-0">
-								<input type="text" class="form-control dataEntry textInput" id="courseNumberInput" placeholder="e.g. 5, 10-20; (exclude letters)">	
-							</div>				
+								<input type="text" class="form-control dataEntry textInput" id="courseNumberInput" placeholder="e.g. 5, 10-20; (exclude letters)">
+							</div>
 						</div>
 						<div class="form-group row pair">
 							<div class="col-sm-4">
@@ -274,7 +270,7 @@
 						<div class="form-group row pair">
 							<div class="col-sm-4">
 								<label class="col-form-label inputLabel required">Course Title</label>
-							</div>	
+							</div>
 							<div class="col-sm-8">
 								<input type="text" class="form-control dataEntry textInput" id="courseTitleInput">
 							</div>
@@ -286,13 +282,13 @@
 						<br>
 					</div>
 					<div id="scheduleOfClasses">
+                        <br>
+						<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>
 						<br>
-						<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>	
 						<br>
-						<!--<br>
 							<input type="radio" class="plotType" id="single" name="add" value="single" checked="checked"> Single Class
 							<input type="radio" class="plotType" id="multiple" name="add" value="multiple"> Multiple Classes
-						<br>-->
+						<br>
 						<br>
 						<table id="classList" style="width:100%">
 							<tr id="tableHeading">
@@ -306,6 +302,7 @@
 						</table>
 						<br>
 						<label class="error" id="noResults">No results found for given search parameters</label>
+                        <label id="working">Gathering Results. Please wait.</label>
 						<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>
 					</div>
 				</div>
@@ -313,6 +310,6 @@
 		</div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="chart.js"></script>
-    <script src="zotcurve.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="js/zotcurve.min.js"></script>
 </html>
