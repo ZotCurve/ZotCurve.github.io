@@ -112,7 +112,8 @@ function numberMatch(key, value)
 				//must remove letters from the database entry that is being compared against,
 				//	if the user inputs 39, we should accept 39A, 39B, AND 39C as all valid
                 let v = Number(value.replace(/[A-Za-z]*/g, ''));	//remove any letters on classes
-    			if (key[i] == v)
+                console.log(v, keys[i])
+    			if (keys[i] == v)
 				{
 			        return true;
 				}
@@ -127,7 +128,7 @@ function numberMatch(key, value)
             else if (keys[i].match(rangere))	//if the user has input a range of numbers
             {
                 let v = Number(value.replace(/[A-Za-z]*/g, '')),	//again remove letters from database values
-                    bounds = key[i].split('-'),						//break apart the range the user passed in; user inputs in format of XX-XX
+                    bounds = keys[i].split('-'),						//break apart the range the user passed in; user inputs in format of XX-XX
                     lowerBound = Number(bounds[0]),					//the first number is the lower bound
                     upperBound = Number(bounds[1]);					//the second number is the upper bound
 
@@ -509,9 +510,9 @@ function buildClassList()
 	if (validSearch())
 	{
 		$("#dataInput").hide();		//hide the input boxes on the webpage
+        $("#working").show();
 
 		//use the callback function to work with the value
-        $("#working").show();
     	listClasses(function(totalList){
 			//if the database given back has a length of 0, there were no results
 			if (totalList.length == 0)
@@ -701,6 +702,32 @@ $('table').on("click", function (event) {
 	}
 });
 
+$('#classList').on("click", function (event) {
+
+	row = $(event.target.parentNode)	//click event directly return the single table column
+										//the parent is the entire row which stores all the data we need
+
+	if (row.hasClass('classEntry'))		//ensure what we clicked on is a table row
+	{
+		//extract all the data from the table row
+		let data = [row.data('year'), row.data('quarter'), row.data('code'), row.data('title'), row.data('instructor'),
+			row.data('dept') + ' ' + row.data('number'), row.data('section'),
+				[row.data('a'),row.data('b'),row.data('c'),row.data('d'),row.data('f'),row.data('p'),row.data('np')]]
+
+		run(data);	//create the graph
+
+		//if there is already a highlighted row
+		if (targetClass != null)
+		{	//restore the color to its original
+			targetClass.css('background-color', targetClassColor);
+		}
+
+		//set the clicked on table row to have the highlighted color
+		targetClass = $(event.target.parentNode);
+		targetClassColor = targetClass.css('background-color');
+		targetClass.css('background-color', highlighted);
+	}
+});
 
 //final call, fades the body in after all the calculations have been done so that user only sees the built page
 $('body').fadeIn();

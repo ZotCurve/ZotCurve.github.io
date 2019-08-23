@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.6.1 Beta]
+
+**Changes:**
+
+- Fixed course number search bar function
+
+
 ## [1.6.0 Beta]
 
 **Changes:**
