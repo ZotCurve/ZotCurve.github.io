@@ -88,7 +88,6 @@ function numberMatch(key, value)
  *
  * @param {[String]}	 key		Is the set of values compared to and used as bounds.
  * 									expected in some sort of format of ([5]; [10, 20-30]; [10-15, 30-40])
- *
  * @param {String}	     value	Is the value from a class to see if it passes the key
  *
  * @return {Boolean} 	The function returns the remaining values from the TSV that passed the comparison test
@@ -446,10 +445,12 @@ function listClasses(fn)
 	$.get('grades.tsv', function(data)
 	{
 		var parsedTSV = data.split('\n');
-		for(var i = 0; i < parsedTSV.length; i++)
+		for(var i = 0; i < parsedTSV.length; i++)	
 		{
 			parsedTSV[i] = parsedTSV[i].split('\t');
 		}
+		parsedTSV.pop() //the last element is an extraneous '\n' so pop the last element off the list
+		
 		fn(trimTSV(parsedTSV)); //use callback to work with the value, has a call to 'trimTSV' before it is handed to the callback
 	})
 	.fail(function() {	//function called when the website fails to load the database. This should never happen.
@@ -510,9 +511,8 @@ function buildClassList()
 	if (validSearch())
 	{
 		$("#dataInput").hide();		//hide the input boxes on the webpage
-        $("#working").show();
 
-		//use the callback function to work with the value
+		//class listClasses to retrieve data from the CSV file, use the callback function to work with the value
     	listClasses(function(totalList){
 			//if the database given back has a length of 0, there were no results
 			if (totalList.length == 0)
@@ -528,14 +528,13 @@ function buildClassList()
 				}
 			}
 		});
-        $("#invalidSearch").hide();				//ensure any invalid search element is hidden
+        $(".error").hide();						//ensure any error is hidden
 		$("#scheduleOfClasses").show();			//reveal the table on the webpage
 	}
 	else
 	{
 		invalidSearchAlert();
 	}
-    $("#working").hide();
 };
 
 function resetSearch()
@@ -570,6 +569,7 @@ function returnToSearch()
 	//clears the list that has been build from the previous search and changes visibility on webpage elements to show only search tools
 	$("tr").remove(".classEntry, .error");
 	$("#scheduleOfClasses").hide();
+	$("#working").show()
 	$("#noResults").hide()
 	$('#dataInput').show();
 };
@@ -675,32 +675,6 @@ var targetClass = null,
 	highlighted = 'rgb(255,255,100)';
 //adds events to recognize clicking on the Class
 
-$('table').on("click", function (event) {
-
-	row = $(event.target.parentNode)	//click event directly return the single table column
-										//the parent is the entire row which stores all the data we need
-
-	if (row.hasClass('classEntry'))		//ensure what we clicked on is a table row
-	{
-		//remove all the data from the table row
-		let data = [row.data('year'), row.data('quarter'), row.data('code'), row.data('title'), row.data('instructor'),
-			row.data('dept') + ' ' + row.data('number'), row.data('section'),
-				[row.data('a'),row.data('b'),row.data('c'),row.data('d'),row.data('f'),row.data('p'),row.data('np')]]
-
-		run(data);	//create the graph
-
-		//if there is already a highlighted row
-		if (targetClass != null)
-		{	//restore the color to its original
-			targetClass.css('background-color', targetClassColor);
-		}
-
-		//set the clicked on table row to have the highlighted color
-		targetClass = $(event.target.parentNode);
-		targetClassColor = targetClass.css('background-color');
-		targetClass.css('background-color', highlighted);
-	}
-});
 
 $('#classList').on("click", function (event) {
 
@@ -709,6 +683,7 @@ $('#classList').on("click", function (event) {
 
 	if (row.hasClass('classEntry'))		//ensure what we clicked on is a table row
 	{
+
 		//extract all the data from the table row
 		let data = [row.data('year'), row.data('quarter'), row.data('code'), row.data('title'), row.data('instructor'),
 			row.data('dept') + ' ' + row.data('number'), row.data('section'),
@@ -730,4 +705,8 @@ $('#classList').on("click", function (event) {
 });
 
 //final call, fades the body in after all the calculations have been done so that user only sees the built page
-$('body').fadeIn();
+
+$( document ).ready(function() 
+{
+	$('body').fadeIn();
+});

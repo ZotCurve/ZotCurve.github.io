@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.6.2 Beta]
+
+**Changes:**
+
+- Bug fixes
+- Code cleanup
+
 ## [1.6.1 Beta]
 
 **Changes:**
