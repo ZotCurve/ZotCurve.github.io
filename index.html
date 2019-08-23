@@ -22,6 +22,7 @@
         <meta charset="UTF-8">
 		<meta name="description" content= "ZotCurve - A tool for UCI students to seek the grade distributions of classes prior. Created by Gevorg Keshishian">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
         <link rel="stylesheet" href="zotcurve.css" type="text/css" >
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,7 +32,7 @@
     	<div class="container-fluid" style="height: 100%">
     		<div class="row" style="height: 100%">
 				<div class="col-sm-6 pad-0" id="left" style="min-height: 100vh; height: 100%;">
-					<img src="logo.png" class="header">
+					<img src="images/logo.png" class="header">
 					<div id="links">
 						<h5>
 							<a class="link" href="https://github.com/ZotCurve/ZotCurve.github.io">GitHub</a>
@@ -47,7 +48,7 @@
 						<div class="chartTitle subtitle" id="average">Filler</div>
 						<div id="footer">
 							<p>
-								Version: 1.5.0 beta
+								Version: 1.6.0 beta
 								</br>
 								<a href="https://github.com/ZotCurve/ZotCurve.github.io/issues" class=link>Report an Issue</a>
 							</p>
@@ -286,8 +287,10 @@
 						<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>
 						<br>
 						<br>
+							<!--
 							<input type="radio" class="plotType" id="single" name="add" value="single" checked="checked"> Single Class
 							<input type="radio" class="plotType" id="multiple" name="add" value="multiple"> Multiple Classes
+							-->
 						<br>
 						<br>
 						<table id="classList" style="width:100%">

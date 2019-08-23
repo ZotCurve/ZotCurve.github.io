@@ -1,9 +1,17 @@
 # Change Log
 
+## [1.6.0 Beta]
+
+**Changes:**
+
+- Added favicon
+- Some more documentation in JS file
+- Removed "single/multiple classes buttons," the feature was not ready to deploy yet
+
 ## [1.5.0 Beta]
 
 
-**Implemented changes:**
+**Changes:**
 
 - Started [Change Log](https://github.com/ZotCurve/ZotCurve.github.io/blob/master/CHANGELOG.md)
 - Thanks to the help of [Maybe14](https://github.com/Maybe14) added support to search for letters in the class numbers
