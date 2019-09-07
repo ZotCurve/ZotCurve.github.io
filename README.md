@@ -1,4 +1,4 @@
-![](images/logo.svg =95x320)
+![](images/logo.svg)
 # Antscope
 Antscope is a web application that is used to view distribution of grades from different classes in the University of California, Irvine. Currently, Antscope will focus on undergraduate classes only since the data for graduate classes and above is unavailable. Compare to its predecessor ZotCurve, Antscope will have a emphasis on UI improvement and data management. 
 
