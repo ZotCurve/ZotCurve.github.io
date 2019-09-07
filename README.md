@@ -11,8 +11,8 @@ http://antscope.github.io
 * jQuery
 
 ## Author
-* Yizhen Liu
-* Calvin Gao
+* [Yizhen Liu](https://github.com/imliuyzh)
+* [Calvin Gao](https://github.com/calvin-gao)
 
 ## License
 ![](https://www.gnu.org/graphics/gplv3-or-later.svg "GNU Public License")
