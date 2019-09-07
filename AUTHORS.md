@@ -14,6 +14,3 @@ Much thanks to the ZotCurve team: Without their efforts, Antscope will not exist
 
 #### ZotCurve Database Contributions
 [Maybe14](https://github.com/Maybe14)
-
-# License
-![ ](https://ibb.co/YhZJmqF "GPL Logo")
