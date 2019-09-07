@@ -2,9 +2,9 @@
 > Inspired by ZotCurve, a tool to view grade distributions from various classes in the University of California, Irvine, Antscope targeted for a vast improvement upon the user interface and also an improvement over the organization of class statistics.
 
 Antscope is written and maintained by [Yizhen Liu](https://github.com/imliuyzh) and [Calvin Gao](https://github.com/calvin-gao).
-   
-   
-   
+\s\s
+\s\s
+\s\s
 Much thanks to the ZotCurve team: Without their efforts, Antscope will not exist.
 #### ZotCurve Development Lead
 [Gevorg Keshishian](https://github.com/keshishi)
