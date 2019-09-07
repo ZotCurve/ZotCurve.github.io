@@ -5,6 +5,7 @@ Antscope is a web application that is used to view distribution of grades from d
 * HTML
 * CSS
 * JavaScript
+* Bootstrap
 * jQuery
 
 ## Author
