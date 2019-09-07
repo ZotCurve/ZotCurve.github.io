@@ -1,13 +1,23 @@
-ZotCurve is written and maintained by [Gevorg Keshishian](https://github.com/keshishi) and various contributors:
+Antscope is written and maintained by [Yizhen Liu](https://github.com/imliuyzh) and 
+[Calvin Gao](https://github.com/calvin-gao).
 
-Development Lead
+
+
+Much thanks to the ZotCurve team: Without their efforts, Antscope will not exist.
+----------------------------------------------------------------------------------------------
+=================
+ZotCurve Development Lead
 =================
 [Gevorg Keshishian](https://github.com/keshishi)
 
-CSS Contributions
+
+=================
+ZotCurve CSS Contributions
 =================
 [Billy (William) Castelli](https://github.com/billycastelli)
 
-Database Contributions
+
+=================
+ZotCurve Database Contributions
 ======================
 [Maybe14](https://github.com/Maybe14)
