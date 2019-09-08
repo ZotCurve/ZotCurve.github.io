@@ -7,7 +7,7 @@ Antscope is written and maintained by [Yizhen Liu](https://github.com/imliuyzh) 
 ## Acknowledgement
 Much thanks to the ZotCurve team: Without their efforts, Antscope will not exist.
 #### ZotCurve Development Lead
-[Gevorg Keshishian](https://github.com/keshishi)
+[Gevorg Keshishian](https://github.com/keshishi)  
 
 
 #### ZotCurve CSS Contributions
