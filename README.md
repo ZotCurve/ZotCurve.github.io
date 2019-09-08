@@ -5,16 +5,17 @@ Antscope is a web application that is used to view distribution of grades from d
 
 http://antscope.github.io
 
+
+## Author
+* [Yizhen Liu](https://github.com/imliuyzh)
+* [Calvin Gao](https://github.com/calvin-gao)
+
 ## Built With
 * HTML
 * CSS
 * JavaScript
 * Bootstrap
 * jQuery
-
-## Author
-* [Yizhen Liu](https://github.com/imliuyzh)
-* [Calvin Gao](https://github.com/calvin-gao)
 
 ## License
 ![](https://www.gnu.org/graphics/gplv3-or-later.svg "GNU Public License")
