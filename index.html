@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-/*  ZotCurve - A tool for UCI students to look at the grade distributions of classes prior.
+/*  ZotCurve - A tool for UCI students to look at the grade distributions of classes prior. Created by Gevorg Keshishian.
     Copyright (C) 2019  ZotCurve
 
     This program is free software: you can redistribute it and/or modify
@@ -20,7 +20,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-		<meta name="description" content= "ZotCurve - A tool for UCI students to seek the grade distributions of classes prior. Created by Gevorg Keshishian">
+		<meta name="description" content= "ZotCurve - A tool for UCI students to seek the grade distributions of classes prior. Created by Gevorg Keshishian.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
@@ -43,13 +43,13 @@
 					<div id="chart">
 						<div class="chartTitle" id="class">Filler</div>
 						<div class="chartTitle subtitle" id="subtext">Filler</div>
-						</br>
+						<br>
 						<canvas id="canvas"></canvas>
 						<div class="chartTitle subtitle" id="average">Filler</div>
 						<div id="footer">
 							<p>
-								Version: 1.6.2 beta
-								</br>
+								Version: 1.7.0 beta
+								<br>
 								<a href="https://github.com/ZotCurve/ZotCurve.github.io/issues" class=link>Report an Issue</a>
 							</p>
 						</div>
@@ -115,44 +115,28 @@
 								<option value="ASIANAM">ASIANAM . . . . Asian American Studies</option>
 								<option value="BIO SCI">BIO SCI . . . . . .Biological Sciences</option>
 								<option value="BME">BME . . . . . . . . Biomedical Engineering</option>
-								<option value="CBE">CBE . . . . . . . . Chemical and Biomolecular Engineering</option>
 								<option value="CBEMS">CBEMS . . . . . .Chemical Engr and Materials Science</option>
-								<option value="CEM">CEM . . . . . . . . Community and Environmental Medicine</option>
 								<option value="CHC/LAT">CHC/LAT . . . . . Chicano Latino</option>
 								<option value="CHEM">CHEM . . . . . . .Chemistry</option>
 								<option value="CHINESE">CHINESE . . . . .Chinese</option>
 								<option value="CLASSIC">CLASSIC . . . . .Classics</option>
-								<option value="CLT&amp;THY">CLT&amp;THY . . . . .Culture &amp; Theory</option>
 								<option value="COGS">COGS . . . . . . . Cognitive Sciences</option>
 								<option value="COM LIT">COM LIT . . . . . Comparative Literature</option>
 								<option value="COMPSCI">COMPSCI . . . . Computer Science</option>
-								<option value="CRITISM">CRITISM . . . . . Criticism</option>
 								<option value="CRM/LAW">CRM/LAW . . . . Criminology, Law and Society</option>
 								<option value="CSE">CSE . . . . . . . . Computer Science and Engineering</option>
 								<option value="DANCE">DANCE . . . . . . Dance</option>
-								<option value="DERM">DERM . . . . . . .Dermatology</option>
-								<option value="DEV BIO">DEV BIO . . . . . Developmental and Cell Biology</option>
 								<option value="DRAMA">DRAMA . . . . . .Drama</option>
-								<option value="E ASIAN">E ASIAN . . . . . East Asian Languages and Literatures</option>
+								<option value="Div of Undergrad Educ (Univ Studies)">Div of Undergrad Educ (Univ Studies)</option>
 								<option value="EARTHSS">EARTHSS . . . . Earth System Science</option>
 								<option value="EAS">EAS . . . . . . . . East Asian Studies</option>
-								<option value="ECO EVO">ECO EVO . . . . Ecology and Evolutionary Biology</option>
 								<option value="ECON">ECON . . . . . . . Economics</option>
-								<option value="ECPS">ECPS . . . . . . . Embedded and Cyber-Physical Systems</option>
-								<option value="ED AFF">ED AFF . . . . . .Educational Affairs (Sch of Med)</option>
 								<option value="EDUC">EDUC . . . . . . . Education</option>
 								<option value="EECS">EECS . . . . . . . Electrical Engineering &amp; Computer Science</option>
-								<option value="EHS">EHS . . . . . . . . Environmental Health Sciences</option>
 								<option value="ENGLISH">ENGLISH . . . . .English</option>
 								<option value="ENGR">ENGR . . . . . . . Engineering</option>
 								<option value="ENGRCEE">ENGRCEE . . . .Engineering, Civil and Environmental</option>
-								<option value="ENGRMAE">ENGRMAE . . . .Engineering, Mechanical and Aerospace</option>
-								<option value="ENGRMSE">ENGRMSE . . . .Materials Science and Engineering</option>
-								<option value="EPIDEM">EPIDEM . . . . . .Epidemiology</option>
-								<option value="ER MED">ER MED . . . . . Emergency Medicine</option>
 								<option value="EURO ST">EURO ST . . . . .European Studies</option>
-								<option value="FAM MED">FAM MED . . . . Family Medicine</option>
-								<option value="FIN">FIN . . . . . . . . . Finance</option>
 								<option value="FLM&amp;MDA">FLM&amp;MDA . . . .Film and Media Studies</option>
 								<option value="FRENCH">FRENCH . . . . . French</option>
 								<option value="GEN&amp;SEX">GEN&amp;SEX . . . . Gender and Sexuality Studies</option>
@@ -161,65 +145,32 @@
 								<option value="GLBLCLT">GLBLCLT . . . . .Global Cultures</option>
 								<option value="GREEK">GREEK . . . . . . Greek</option>
 								<option value="HEBREW">HEBREW . . . . .Hebrew</option>
-								<option value="HINDI">HINDI . . . . . . . .Hindi</option>
 								<option value="HISTORY">HISTORY . . . . .History</option>
 								<option value="HUMAN">HUMAN . . . . . .Humanities</option>
-								<option value="HUMARTS">HUMARTS . . . . Humanities and Arts</option>
 								<option value="I&amp;C SCI">I&amp;C SCI . . . . . . Information and Computer Science</option>
 								<option value="IN4MATX">IN4MATX . . . . . Informatics</option>
-								<option value="INT MED">INT MED . . . . . Internal Medicine</option>
 								<option value="INTL ST">INTL ST . . . . . . International Studies</option>
 								<option value="ITALIAN">ITALIAN . . . . . .Italian</option>
 								<option value="JAPANSE">JAPANSE . . . . Japanese</option>
 								<option value="KOREAN">KOREAN . . . . .Korean</option>
 								<option value="LATIN">LATIN . . . . . . . Latin</option>
-								<option value="LAW">LAW . . . . . . . . Law</option>
 								<option value="LINGUIS">LINGUIS . . . . . .Linguistics</option>
 								<option value="LIT JRN">LIT JRN . . . . . . Literary Journalism</option>
 								<option value="LPS">LPS . . . . . . . . .Logic and Philosophy of Science</option>
-								<option value="LSCI">LSCI . . . . . . . . Language Science</option>
-								<option value="M&amp;MG">M&amp;MG . . . . . . .Microbiology and Molecular Genetics</option>
+								<option value="MAE">MAE . . . . . . . . .Mechanical and Aerospace Engineering</option>
 								<option value="MATH">MATH . . . . . . . Mathematics</option>
-								<option value="MED">MED . . . . . . . . Medicine</option>
-								<option value="MED ED">MED ED . . . . . Medical Education</option>
-								<option value="MED HUM">MED HUM . . . . Medical Humanities</option>
 								<option value="MGMT">MGMT . . . . . . .Management</option>
-								<option value="MGMT EP">MGMT EP . . . . Executive MBA</option>
-								<option value="MGMT FE">MGMT FE . . . . Fully Employed MBA</option>
-								<option value="MGMT HC">MGMT HC . . . . Health Care MBA</option>
-								<option value="MGMTMBA">MGMTMBA . . . Management MBA</option>
-								<option value="MGMTPHD">MGMTPHD . . . .Management PhD</option>
-								<option value="MIC BIO">MIC BIO . . . . . .Microbiology</option>
-								<option value="MOL BIO">MOL BIO . . . . . Molecular Biology and Biochemistry</option>
-								<option value="MPAC">MPAC . . . . . . .Accounting</option>
 								<option value="MUSIC">MUSIC . . . . . . .Music</option>
-								<option value="NET SYS">NET SYS . . . . .Networked Systems</option>
-								<option value="NEURBIO">NEURBIO . . . . .Neurobiology and Behavior</option>
-								<option value="NEUROL">NEUROL . . . . . Neurology</option>
 								<option value="NUR SCI">NUR SCI . . . . . Nursing Science</option>
-								<option value="OB/GYN">OB/GYN . . . . . Obstetrics and Gynecology</option>
-								<option value="OPHTHAL">OPHTHAL . . . . Ophthalmology</option>
-								<option value="PATH">PATH . . . . . . . Pathology and Laboratory Medicine</option>
-								<option value="PED GEN">PED GEN . . . . Pediatrics Genetics</option>
-								<option value="PEDS">PEDS . . . . . . . Pediatrics</option>
 								<option value="PERSIAN">PERSIAN . . . . .Persian</option>
-								<option value="PHARM">PHARM . . . . . .Medical Pharmacology</option>
 								<option value="PHILOS">PHILOS . . . . . .Philosophy</option>
 								<option value="PHRMSCI">PHRMSCI . . . . Pharmaceutical Sciences</option>
 								<option value="PHY SCI">PHY SCI . . . . . Physical Science</option>
 								<option value="PHYSICS">PHYSICS . . . . .Physics</option>
-								<option value="PHYSIO">PHYSIO . . . . . .Physiology and Biophysics</option>
-								<option value="PLASTIC">PLASTIC . . . . . Plastic Surgery</option>
-								<option value="PM&amp;R">PM&amp;R . . . . . . .Physical Medicine and Rehabilitation</option>
 								<option value="POL SCI">POL SCI . . . . . Political Science</option>
-								<option value="PORTUG">PORTUG . . . . . Portuguese</option>
 								<option value="PP&amp;D">PP&amp;D . . . . . . . Planning, Policy, and Design</option>
-								<option value="PSCI">PSCI . . . . . . . .Psychological Science</option>
 								<option value="PSY BEH">PSY BEH . . . . .Psychology and Social Behavior</option>
-								<option value="PSYCH">PSYCH . . . . . . Psychology</option>
-								<option value="PUB POL">PUB POL . . . . .Public Policy</option>
 								<option value="PUBHLTH">PUBHLTH . . . . Public Health</option>
-								<option value="RADIO">RADIO . . . . . . .Radiology</option>
 								<option value="REL STD">REL STD . . . . . Religious Studies</option>
 								<option value="ROTC">ROTC . . . . . . . Reserve Officers' Training Corps</option>
 								<option value="RUSSIAN">RUSSIAN . . . . .Russian</option>
@@ -229,16 +180,10 @@
 								<option value="SPANISH">SPANISH . . . . .Spanish</option>
 								<option value="SPPS">SPPS . . . . . . . Social Policy &amp; Public Service</option>
 								<option value="STATS">STATS . . . . . . .Statistics</option>
-								<option value="SURGERY">SURGERY . . . .Surgery</option>
-								<option value="SWE">SWE . . . . . . . .Software Engineering</option>
-								<option value="TAGALOG">TAGALOG . . . . Tagalog</option>
-								<option value="TOX">TOX . . . . . . . . .Toxicology</option>
+								<option value="STU AFF">STU AFF . . . . . . .Student Affairs</option>
 								<option value="UCDC">UCDC . . . . . . . UC Washington DC</option>
-								<option value="UNI AFF">UNI AFF . . . . . .University Affairs</option>
-								<option value="UNI STU">UNI STU . . . . . .University Studies</option>
 								<option value="UPPP">UPPP . . . . . . . Urban Planning and Public Policy</option>
 								<option value="VIETMSE">VIETMSE . . . . .Vietnamese</option>
-								<option value="VIS STD">VIS STD . . . . . .Visual Studies</option>
 								<option value="WOMN ST">WOMN ST . . . . Women's Studies</option>
 								<option value="WRITING">WRITING . . . . . Writing</option>
 							</select>
@@ -285,14 +230,13 @@
 					<div id="scheduleOfClasses">
                         <br>
 						<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>
+						<!--<br>
 						<br>
-						<br>
-							<!--
 							<input type="radio" class="plotType" id="single" name="add" value="single" checked="checked"> Single Class
 							<input type="radio" class="plotType" id="multiple" name="add" value="multiple"> Multiple Classes
-							-->
 						<br>
 						<br>
+						-->
 						<table id="classList" style="width:100%">
 							<tr id="tableHeading">
 								<th>Term</th>
@@ -305,7 +249,6 @@
 						</table>
 						<br>
 						<label class="error" id="noResults">No results found for given search parameters</label>
-						<label id="working">Gathering results. Please wait.</label>
 						<button class="btn btn-info" type="button" id="return" onclick="returnToSearch()">Return to Search</button>
 					</div>
 				</div>
