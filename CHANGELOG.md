@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.7.0 Beta]
+**Changes:**
+
+- Removed extraneous departments from the drop down table
+- Removed lingering "Gathering results" from the search results.
+
 ## [1.6.2 Beta]
 
 **Changes:**
